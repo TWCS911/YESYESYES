@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    font-family: 'Poppins', sans-serif;    
+    background-color: #000046;
+    background-image: radial-gradient(#000046, #1cb5e0);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+p{
+    text-align: justify;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+   
+    padding: 20px;
+  }
+  
+header nav a {
+    font-size: 18px;
+   
+    font-weight: 400;
+    text-decoration: none;
+   
+    color: white;
+    transition: color 0.4s ease-in-out;
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+   
+    gap: 2rem;
+}
+nav li {
+    list-style-type: none;
+}
+
+
+header#first {
+    background:rgba(0,0,0,0);
+    position: sticky;
+    top: 0;
+    display: flex;
+    list-style-type: none;
+   
+    
+
+    transition: background-color 0.4s ease-in-out;
+  }
+
+header#first.scrolled{
+    background-color: #000046;
+}
+  
+header#first.scrolled nav a{
+    color: white;
+}
+
+
+
+
+footer {
+    padding: 20px;
+    padding-top: 400px;
+    /* margin : 70px; */
+    color: white;
+   
+    text-align: center;
+    font-weight: bold;
+  }
+
+aside {
+    flex: 1;
+}
+
+#Content {
+  flex: 5;
+  
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+   
+.Profile header {
+  text-align: center;
+}
+   
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+   
+  object-fit: cover;
+  object-position: center;
+}
+   
+.Profile img {
+  max-width: 200px;
+}
+
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  main aside {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+  main aside {
+    align-self: stretch;
+  }
+}
